@@ -15,6 +15,20 @@
 
 
     </style>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+    const buttonImg = document.querySelector(".button img");
+
+    buttonImg.addEventListener("mouseover", function () {
+        this.style.transform = "scale(1.1)";
+        this.style.transition = "transform 0.3s ease-in-out";
+    });
+
+    buttonImg.addEventListener("mouseout", function () {
+        this.style.transform = "scale(1)";
+    });
+});
+    </script>
 </head>
 
 <body>
